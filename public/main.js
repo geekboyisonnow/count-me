@@ -1,8 +1,12 @@
 let count = 0
 
-const main = () => {
-  // write all my code here inside main
+const counter = () => {
 
+  // Function does this:
+  // increment the count 
+  count += 1
+
+  // Change the p tag to show the variable count
   // Find the p tag
   const ptag = document.querySelector('p')
   console.log(ptag)
@@ -10,18 +14,22 @@ const main = () => {
   // Change the p tag text to the variable count.
   ptag.textContent = count
 
+}
+
+const main = () => {
+  // write all my code here inside main
+
+
+
   // When the user clicks the button; 
   // find the button
 
   const button = document.querySelector('button')
   console.log(button)
 
+  counter()
+
   // When the button is clicked - call a Function
-  // increment the count 
-
-
-  // Change the p tag to show the variable count
-
 
   // if (document.querySelector('h1.hello-world')) {
   //   document.querySelector('h1.hello-world').textContent = 'Hello, World!'
