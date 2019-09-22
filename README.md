@@ -1,2 +1,1 @@
-# count-me
-Basic JS Counter
+# Count Me
