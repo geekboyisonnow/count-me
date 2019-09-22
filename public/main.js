@@ -30,6 +30,7 @@ const main = () => {
   counter()
 
   // When the button is clicked - call a Function
+  button.addEventListener('click', counter)
 
   // if (document.querySelector('h1.hello-world')) {
   //   document.querySelector('h1.hello-world').textContent = 'Hello, World!'
