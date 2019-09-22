@@ -4,7 +4,7 @@ const counter = () => {
 
   // Function does this:
   // increment the count 
-  count += 1
+  count = count + 1
 
   // Change the p tag to show the variable count
   // Find the p tag
@@ -26,8 +26,6 @@ const main = () => {
 
   const button = document.querySelector('button')
   console.log(button)
-
-  counter()
 
   // When the button is clicked - call a Function
   button.addEventListener('click', counter)
