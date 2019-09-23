@@ -16,23 +16,40 @@ const counter = () => {
 
 }
 
+const reset = (event) => {
+  // Don't do default functionality that this
+  // Event would do
+  event.preventDefault()
+
+  // Set counter to 0
+  count = 0
+
+  // Change the p tag text to the variable count.
+  const ptag = document.querySelector('p')
+  ptag.textContent = count
+
+}
+
 const main = () => {
   // write all my code here inside main
+  // Find the p tag
+  const ptag = document.querySelector('p')
+  console.log(ptag)
 
+  // Change the p tag text to what the variable is
+  ptag.textContent = count
 
-
-  // When the user clicks the button; 
-  // find the button
+  // When the button is clicked
+  // Find the button
 
   const button = document.querySelector('button')
   console.log(button)
 
   // When the button is clicked - call a Function
+  // Call the function
   button.addEventListener('click', counter)
+  button.addEventListener('contextmenu', reset)
 
-  // if (document.querySelector('h1.hello-world')) {
-  //   document.querySelector('h1.hello-world').textContent = 'Hello, World!'
-  // }
 }
 
 document.addEventListener('DOMContentLoaded', main)
